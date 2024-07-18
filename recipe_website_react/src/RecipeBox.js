@@ -1,6 +1,5 @@
 import "font-awesome/css/font-awesome.min.css";
 import ReviewForm from "./ReviewForm";
-import { useState } from "react";
 
 const renderStars = (rating) => {
   const maxStars = 5;
@@ -31,6 +30,8 @@ export default function RecipeBox({
   recipeList,
   selectedIndex,
   setSelectedIndex,
+  reviewedRecipes,
+  setReviewedRecipes,
 }) {
   const handleOnClick = (index) => {
     setSelectedIndex(index);
@@ -44,6 +45,8 @@ export default function RecipeBox({
     <RecipeFullLoad
       recipe={recipeList[selectedIndex]}
       handleClose={handleClose}
+      reviewedRecipes={reviewedRecipes}
+      setReviewedRecipes={setReviewedRecipes}
     />
   ) : (
     <div>
@@ -85,9 +88,17 @@ function RecipeHeader({ recipe, index, handleOnClick }) {
   );
 }
 
-function RecipeFullLoad({ recipe, handleClose }) {
-  const [isReviewed, setIsReviewed] = useState(false);
-
+function RecipeFullLoad({
+  recipe,
+  handleClose,
+  reviewedRecipes,
+  setReviewedRecipes,
+}) {
+  function handleReviewedRecipe(recipeId) {
+    if (!reviewedRecipes.includes(recipeId))
+      setReviewedRecipes([...reviewedRecipes, recipeId]);
+  }
+  console.log(reviewedRecipes);
   return (
     <div className="recipecontainer">
       <button onClick={handleClose} className="close-button">
@@ -142,8 +153,14 @@ function RecipeFullLoad({ recipe, handleClose }) {
         ))}
       </ul>
       <>
-        {!isReviewed && (
+        {/* {!isReviewed && (
           <ReviewForm recipeId={recipe.id} setIsReviewed={setIsReviewed} />
+        )} */}
+        {!reviewedRecipes.includes(recipe.id) && (
+          <ReviewForm
+            recipeId={recipe.id}
+            handleReviewedRecipe={handleReviewedRecipe}
+          />
         )}
       </>
       <button onClick={handleClose}> Back To Recipies </button>

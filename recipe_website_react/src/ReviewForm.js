@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function ReviewForm({ recipeId, setIsReviewed }) {
+export default function ReviewForm({
+  recipeId,
+  setIsReviewed,
+  handleReviewedRecipe,
+}) {
   const [formData, setFormData] = useState({
     recipe: recipeId,
     username: "",
@@ -9,9 +13,9 @@ export default function ReviewForm({ recipeId, setIsReviewed }) {
     comment: "",
   });
 
-  function handleIsReviewed() {
-    setIsReviewed(true);
-  }
+  // function handleIsReviewed() {
+  //   setIsReviewed(true);
+  // }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -53,7 +57,8 @@ export default function ReviewForm({ recipeId, setIsReviewed }) {
         }
       );
       console.log("Review submitted:", response.data);
-      handleIsReviewed();
+      // handleIsReviewed();
+      handleReviewedRecipe(recipeId);
       // Reset form or handle success
     } catch (error) {
       console.error("Failed to submit review:", error);

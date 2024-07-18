@@ -8,6 +8,7 @@ export default function Body() {
   const [recipeList, setRecipeList] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [filteredItems, setFilteredItems] = useState([...recipeList]);
+  const [reviewedRecipes, setReviewedRecipes] = useState([]);
 
   useEffect(() => {
     axios
@@ -16,7 +17,7 @@ export default function Body() {
       )
       .then((response) => setRecipeList(response.data))
       .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  }, [reviewedRecipes]);
 
   useEffect(() => {
     setFilteredItems([...recipeList]);
@@ -33,6 +34,8 @@ export default function Body() {
         recipeList={filteredItems}
         selectedIndex={selectedIndex}
         setSelectedIndex={setSelectedIndex}
+        reviewedRecipes={reviewedRecipes}
+        setReviewedRecipes={setReviewedRecipes}
       ></RecipeBox>
     </div>
   );
