@@ -72,14 +72,12 @@ function RecipeHeader({ recipe, index, handleOnClick }) {
         <img src={recipe.image_url} alt={recipe.title} />
       </div>
       <div className="content">
-        <div className="header">
-          <h3>{recipe.title}</h3>
-          <div className="row">
-            <em>{recipe.cusine}</em>
-            <div className="rating">
-              {renderStars(recipe.average_rating.toFixed(1))}
-              <span>{recipe.average_rating.toFixed(1)}</span>
-            </div>
+        <h3>{recipe.title}</h3>
+        <div className="row">
+          <em>{recipe.cusine}</em>
+          <div className="rating">
+            {renderStars(recipe.average_rating.toFixed(1))}
+            <span>{recipe.average_rating.toFixed(1)}</span>
           </div>
         </div>
         <p>{recipe.description}</p>

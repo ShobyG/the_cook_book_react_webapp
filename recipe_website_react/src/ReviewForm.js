@@ -66,7 +66,7 @@ export default function ReviewForm({
     }
   };
   return (
-    <div>
+    <div className="review-form">
       <h3>Leave a review</h3>
       <form onSubmit={handleSubmit}>
         <div>
