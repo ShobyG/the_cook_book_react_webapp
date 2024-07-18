@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "title": "Chicken Tikka Masala",
+    "cuisine": "Indian",
+    "description": "Tender chicken marinated in spices, grilled, and served in a rich tomato-based curry sauce.",
+    "image": "https://the-cook-book-images.s3.us-east-2.amazonaws.com/chicken_tikka_masala.jpg",
+    "prepTime": "30 minutes",
+    "cookTime": "30 minutes",
+    "difficulty": "Medium",
+    "servings": 4,
+    "ingredients": [
+      "500g chicken breasts, cut into chunks",
+      "1 cup yogurt",
+      "2 tbsp ginger-garlic paste",
+      "2 tbsp garam masala",
+      "1 tsp turmeric powder",
+      "1 tsp cumin powder",
+      "1 tbsp vegetable oil",
+      "1 onion, finely chopped",
+      "3 tomatoes, pureed",
+      "1 cup cream",
+      "Fresh cilantro leaves for garnish",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt, ginger-garlic paste, garam masala, turmeric, and cumin powder for 1 hour.",
+      "Grill chicken until cooked through and slightly charred.",
+      "In a pan, heat oil and sauté onion until golden brown.",
+      "Add tomato puree, cream, and cooked chicken. Simmer for 15-20 minutes.",
+      "Season with salt and pepper. Garnish with cilantro and serve hot."
+    ],
+    "rating": 4.8,
+    "reviews": [
+      {
+        "username": "SpiceLover",
+        "rating": 5,
+        "comment": "Authentic and delicious!"
+      },
+      {
+        "username": "FoodieExplorer",
+        "rating": 4.5,
+        "comment": "Great recipe! Loved the flavors."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Pad Thai",
+    "cuisine": "Thai",
+    "description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts in a tangy tamarind sauce.",
+    "image": "https://the-cook-book-images.s3.us-east-2.amazonaws.com/pad_thai.jpg",
+    "prepTime": "25 minutes",
+    "cookTime": "15 minutes",
+    "difficulty": "Easy",
+    "servings": 2,
+    "ingredients": [
+      "200g rice noodles",
+      "150g shrimp, peeled and deveined",
+      "100g tofu, diced",
+      "1 cup bean sprouts",
+      "2 eggs, beaten",
+      "2 tbsp tamarind paste",
+      "3 tbsp fish sauce",
+      "1 tbsp soy sauce",
+      "1 tbsp palm sugar",
+      "2 tbsp vegetable oil",
+      "2 cloves garlic, minced",
+      "1/4 cup roasted peanuts, chopped",
+      "Fresh cilantro and lime wedges for garnish"
+    ],
+    "instructions": [
+      "Soak rice noodles in warm water until softened. Drain and set aside.",
+      "In a small bowl, mix tamarind paste, fish sauce, soy sauce, and palm sugar.",
+      "Heat oil in a wok or large pan. Add garlic and stir-fry until fragrant.",
+      "Add shrimp and tofu, stir-fry until shrimp turns pink.",
+      "Push ingredients to the side and pour beaten eggs into the pan. Scramble until cooked.",
+      "Add noodles and tamarind sauce mixture. Toss to combine thoroughly.",
+      "Stir in bean sprouts and half of the chopped peanuts.",
+      "Serve hot, garnished with remaining peanuts, cilantro, and lime wedges."
+    ],
+    "rating": 4.6,
+    "reviews": [
+      {
+        "username": "ThaiFoodFanatic",
+        "rating": 5,
+        "comment": "Perfect Pad Thai! Better than restaurant."
+      },
+      {
+        "username": "NoodleLover",
+        "rating": 4,
+        "comment": "Delicious, but a bit sweet for my taste."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Chili Chicken",
+    "cuisine": "Chinese",
+    "description": "Crispy chicken tossed in a spicy and tangy sauce with bell peppers and onions.",
+    "image": "https://the-cook-book-images.s3.us-east-2.amazonaws.com/chilli_chicken.jpg",
+    "prepTime": "20 minutes",
+    "cookTime": "15 minutes",
+    "difficulty": "Medium",
+    "servings": 4,
+    "ingredients": [
+      "500g boneless chicken, cut into cubes",
+      "1/2 cup cornstarch",
+      "2 tbsp soy sauce",
+      "1 tbsp ginger-garlic paste",
+      "1 tbsp vinegar",
+      "1 tsp red chili powder",
+      "1 bell pepper, diced",
+      "1 onion, diced",
+      "3-4 green chilies, slit",
+      "2 tbsp vegetable oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "In a bowl, marinate chicken with soy sauce, ginger-garlic paste, vinegar, and red chili powder.",
+      "Coat marinated chicken pieces with cornstarch.",
+      "Heat oil in a pan. Fry chicken until crispy and golden brown. Remove and set aside.",
+      "In the same pan, sauté bell pepper, onion, and green chilies until tender-crisp.",
+      "Add fried chicken pieces and toss with the vegetables.",
+      "Season with salt and pepper. Serve hot."
+    ],
+    "rating": 4.4,
+    "reviews": [
+      {
+        "username": "SpicyFoodFan",
+        "rating": 4,
+        "comment": "Deliciously spicy!"
+      },
+      {
+        "username": "ChineseFoodLover",
+        "rating": 4.5,
+        "comment": "Authentic flavors, loved it!"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Paneer Butter Masala",
+    "cuisine": "Indian",
+    "description": "Soft paneer cubes cooked in a creamy and aromatic tomato-based sauce.",
+    "image": "https://example.com/paneer_butter_masala.jpg",
+    "prepTime": "25 minutes",
+    "cookTime": "30 minutes",
+    "difficulty": "Easy",
+    "servings": 3,
+    "ingredients": [
+      "250g paneer, cut into cubes",
+      "2 tbsp butter",
+      "1 onion, finely chopped",
+      "2 tomatoes, pureed",
+      "1/2 cup cream",
+      "1 tbsp ginger-garlic paste",
+      "1 tbsp kasuri methi (dried fenugreek leaves)",
+      "1 tsp garam masala",
+      "1 tsp red chili powder",
+      "1/2 tsp turmeric powder",
+      "1/2 tsp cumin seeds",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Heat butter in a pan. Add cumin seeds and sauté until they splutter.",
+      "Add chopped onion and ginger-garlic paste. Sauté until onion turns golden brown.",
+      "Add tomato puree, garam masala, red chili powder, turmeric powder, and kasuri methi. Cook until oil separates.",
+      "Stir in cream and cook for a few minutes.",
+      "Add paneer cubes and simmer for 5-10 minutes until paneer is heated through and sauce thickens.",
+      "Garnish with cilantro. Serve hot with naan or rice."
+    ],
+    "rating": 4.7,
+    "reviews": [
+      {
+        "username": "PaneerLover",
+        "rating": 5,
+        "comment": "Best Paneer Butter Masala I've ever had!"
+      },
+      {
+        "username": "IndianFoodie",
+        "rating": 4.5,
+        "comment": "Creamy and flavorful, loved every bite."
+      }
+    ]
+  }
+]
