@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import StarRating from "./StarRating";
 
-export default function ReviewForm({
-  recipeId,
-  setIsReviewed,
-  handleReviewedRecipe,
-}) {
+export default function ReviewForm({ recipeId, handleReviewedRecipe }) {
   const [formData, setFormData] = useState({
     recipe: recipeId,
     username: "",
@@ -13,10 +10,12 @@ export default function ReviewForm({
     comment: "",
   });
 
-  // function handleIsReviewed() {
-  //   setIsReviewed(true);
-  // }
-
+  function handleRatingChange(rating) {
+    setFormData({
+      ...formData,
+      rating,
+    });
+  }
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -79,7 +78,7 @@ export default function ReviewForm({
             onChange={handleChange}
           />
         </div>
-        <div>
+        {/* <div>
           <label>Rating:</label>
           <input
             type="number"
@@ -89,6 +88,15 @@ export default function ReviewForm({
             onChange={handleChange}
             max="5"
             min="1"
+          />
+        </div> */}
+        <div className="form-group">
+          <label>
+            Rating: {formData.rating !== "0" ? formData.rating : ""}
+          </label>
+          <StarRating
+            rating={formData.rating}
+            onRatingChange={handleRatingChange}
           />
         </div>
         <div>

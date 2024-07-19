@@ -473,3 +473,24 @@ input[type="checkbox"] {
 .review-form button:hover {
   background-color: #a0795a;
 }
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.star-rating .fa-star {
+  font-size: 2rem;
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+.star-rating .fa-star.checked {
+  color: #ffd700;
+}
+
+.star-rating .fa-star:hover,
+.star-rating .fa-star:hover ~ .fa-star {
+  color: #ffd700;
+}
